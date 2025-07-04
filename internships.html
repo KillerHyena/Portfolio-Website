@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internships | My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Portfolio</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="internships.html" class="active">Internships</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <button class="theme-toggle" id="theme-toggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+                <div class="mobile-menu" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="internships" class="section" style="background: var(--card-bg);">
+        <div class="container">
+            <h2 class="section-title">Internships</h2>
+            <div class="grid-container">
+                <div class="card animate-on-scroll">
+                    <div class="card-img">
+                        <div class="internship-placeholder">
+                            <i class="fas fa-building"></i>
+                            <h3>Tech Innovations Inc.</h3>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Frontend Developer Intern</h3>
+                        <span class="date">Tech Innovations Inc. | Summer 2022</span>
+                        <p>Developed responsive UI components and implemented design systems using React and styled-components.</p>
+                        <ul style="margin-top: 10px; padding-left: 20px;">
+                            <li>Created reusable React components</li>
+                            <li>Implemented responsive layouts</li>
+                            <li>Collaborated with UX designers</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <div class="card-img">
+                        <div class="internship-placeholder">
+                            <i class="fas fa-rocket"></i>
+                            <h3>StartUp Ventures</h3>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>UI/UX Design Intern</h3>
+                        <span class="date">StartUp Ventures | Spring 2022</span>
+                        <p>Designed user interfaces and conducted usability testing for a new mobile application.</p>
+                        <ul style="margin-top: 10px; padding-left: 20px;">
+                            <li>Created wireframes and prototypes</li>
+                            <li>Conducted user research sessions</li>
+                            <li>Developed design system components</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <div class="card-img">
+                        <div class="internship-placeholder">
+                            <i class="fas fa-paint-brush"></i>
+                            <h3>Digital Solutions</h3>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Web Development Intern</h3>
+                        <span class="date">Digital Solutions Agency | Summer 2021</span>
+                        <p>Assisted in building client websites using HTML, CSS, JavaScript and WordPress.</p>
+                        <ul style="margin-top: 10px; padding-left: 20px;">
+                            <li>Developed responsive websites</li>
+                            <li>Implemented custom WordPress themes</li>
+                            <li>Performed website maintenance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+            </div>
+            <p class="copyright">© 2023 John Doe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
