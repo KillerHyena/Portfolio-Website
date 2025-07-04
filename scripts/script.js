@@ -18,7 +18,18 @@ if (themeToggle) {
             icon.classList.remove('fa-sun');
             icon.classList.add('fa-moon');
         }
+        
+        // Save theme preference to localStorage
+        localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
     });
+    
+    // Apply saved theme preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        themeToggle.querySelector('i').classList.remove('fa-moon');
+        themeToggle.querySelector('i').classList.add('fa-sun');
+    }
 }
 
 // Mobile Menu Toggle
@@ -115,7 +126,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         
         const targetId = this.getAttribute('href');
-        if (targetId === '#') return;
+        if (targetId === '#' || targetId === '#!') return;
         
         const target = document.querySelector(targetId);
         
@@ -124,6 +135,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 top: target.offsetTop - 80,
                 behavior: 'smooth'
             });
+            
+            // Update URL without adding to history
+            history.replaceState(null, null, targetId);
         }
     });
 });
@@ -147,7 +161,26 @@ window.addEventListener('scroll', () => {
     navLinks.forEach(link => {
         link.classList.remove('active');
         const href = link.getAttribute('href');
-        if (href === `#${current}` || (current === '' && href === 'index.html')) {
+        
+        // Handle both hash links and page links
+        if (href.startsWith('#') && href === `#${current}`) {
+            link.classList.add('active');
+        } else if (current === '' && href === 'index.html') {
+            link.classList.add('active');
+        } else if (!href.startsWith('#') && window.location.pathname.endsWith(href)) {
+            link.classList.add('active');
+        }
+    });
+});
+
+// Initialize active link based on current page
+document.addEventListener('DOMContentLoaded', () => {
+    const currentPage = window.location.pathname.split('/').pop();
+    const navLinks = document.querySelectorAll('.nav-links a');
+    
+    navLinks.forEach(link => {
+        const linkPage = link.getAttribute('href');
+        if (linkPage === currentPage) {
             link.classList.add('active');
         }
     });
