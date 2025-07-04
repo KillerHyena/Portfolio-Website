@@ -441,3 +441,82 @@ footer {
     padding-top: 20px;
     border-top: 1px solid #ddd;
 }
+        /* Additional styles for the About Me page */
+        .hobbies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .hobby {
+            background: var(--accent);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .education-item {
+            margin-bottom: 5px;
+        }
+        
+        .detail-item > div {
+            display: flex;
+            flex-direction: column;
+        }
+                /* Additional styling for contact page */
+        .contact-info .social-links a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 15px;
+            background: var(--card-bg);
+            border-radius: 30px;
+            margin-bottom: 10px;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+        }
+        
+        .contact-info .social-links a:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .contact-info .social-links a i {
+            font-size: 1.2rem;
+            width: 24px;
+            text-align: center;
+        }
+        
+        .contact-item p {
+            line-height: 1.6;
+        }
+                .download-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 15px;
+            padding: 8px 15px;
+            background: var(--primary);
+            color: white;
+            border-radius: 30px;
+            transition: var(--transition);
+        }
+        
+        .download-link:hover {
+            background: var(--secondary);
+            transform: translateY(-3px);
+        }
+        
+        .download-link i {
+            font-size: 0.9rem;
+        }
+        
+        .card-links {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
