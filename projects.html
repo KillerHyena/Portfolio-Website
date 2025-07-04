@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/animations.css">
     <link rel="stylesheet" href="styles/responsive.css">
+
 </head>
 <body>
     <header>
@@ -36,133 +37,173 @@
 
     <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="grid-container">
-                <div class="card animate-on-scroll">
-                    <div class="card-img">
-                        <div class="project-placeholder">
-                            <i class="fas fa-laptop-code"></i>
-                            <h3>To-do List App</h3>
-                        </div>
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-grid">
+                <!-- To-do List App -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-header">
+                        <i class="fas fa-tasks project-icon"></i>
+                        <h3>To-do List App</h3>
                     </div>
-                    <div class="card-content">
-                        <h3>MERN Stack To-do List App</h3>
-                        <span class="date">MongoDB , Express.js , React, Node.js</span>
-                        <p>A MERN Stack To-do List App made for an MERN Stack Bootcamp Project </p>
-                        <a href="https://github.com/KillerHyena/MERN-STACK-PROJECT---Aaryan-Verma" class="btn" style="margin-top: 15px; display: inline-block;">Github Repo</a>
-                        <a href="https://github.com/KillerHyena/MERN-STACK-PROJECT---Aaryan-Verma" class="btn" style="margin-top: 15px; display: inline-block;">Deployed Link</a>
+                    <div class="project-content">
+                        <div class="project-title">MERN Stack To-do List</div>
+                        <span class="project-tech">MongoDB, Express.js, React, Node.js</span>
+                        <p class="project-description">A full-stack task management application built with the MERN stack during a bootcamp project. Features user authentication, task categorization, and real-time updates.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/KillerHyena/MERN-STACK-PROJECT---Aaryan-Verma" class="project-btn github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://github.com/KillerHyena/MERN-STACK-PROJECT---Aaryan-Verma" class="project-btn">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="card animate-on-scroll">
-                    <div class="card-img">
-                        <div class="project-placeholder">
-                            <i class="fas fa-tasks"></i>
-                            <h3>Inquiro - AI Assistant</h3>
-                        </div>
+                <!-- AI Assistant -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-header">
+                        <i class="fas fa-robot project-icon"></i>
+                        <h3>Inquiro AI Assistant</h3>
                     </div>
-                    <div class="card-content">
-                        <h3>Inquiro - AI Assistant</h3>
-                        <span class="date">Flask , HTML</span>
-                        <p>A simple AI Assistant </p>
-                        <a href="https://github.com/KillerHyena/Inquiro" class="btn" style="margin-top: 15px; display: inline-block;">Github Repo</a>
-                        <a href="https://inquiro-g8e8.onrender.com" class="btn" style="margin-top: 15px; display: inline-block;">Deployed Link</a>
+                    <div class="project-content">
+                        <div class="project-title">AI-Powered Assistant</div>
+                        <span class="project-tech">Flask, HTML, CSS, JavaScript</span>
+                        <p class="project-description">An intelligent assistant capable of answering questions, performing tasks, and providing information. Developed during an AI internship using prompt engineering techniques.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/KillerHyena/Inquiro" class="project-btn github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://inquiro-g8e8.onrender.com" class="project-btn">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="card animate-on-scroll">
-                    <div class="card-img">
-                        <div class="project-placeholder">
-                            <i class="fas fa-dumbbell"></i>
-                            <h3>Women's Day Website 1</h3>
-                        </div>
-                    </div>
-                    <div class="card-content">
+                <!-- Women's Day Website -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-header">
+                        <i class="fas fa-heart project-icon"></i>
                         <h3>Women's Day Website</h3>
-                        <span class="date">HTML , CSS , JS </span>
-                        <p>A simple website made for women's day</p>
-                        <a href="https://github.com/KillerHyena/Women-s-Day-Website" class="btn" style="margin-top: 15px; display: inline-block;">Github Repo</a>
-                        <a href="https://happiestwomensday.netlify.app/" class="btn" style="margin-top: 15px; display: inline-block;">Deployed Link</a>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title">Celebrating Women's Day</div>
+                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                        <p class="project-description">An interactive website celebrating International Women's Day, featuring inspirational quotes, historical information, and a tribute to influential women.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/KillerHyena/Women-s-Day-Website" class="project-btn github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://happiestwomensday.netlify.app/" class="project-btn">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card animate-on-scroll">
-                    <div class="card-img">
-                        <div class="project-placeholder">
-                            <i class="fas fa-dumbbell"></i>
-                            <h3>Women's Day Website 2</h3>
-                        </div>
+                <!-- Second Women's Day Website -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-header">
+                        <i class="fas fa-female project-icon"></i>
+                        <h3>Women's Day Website 2</h3>
                     </div>
-                    <div class="card-content">
-                        <h3>Women's Day Website</h3>
-                        <span class="date">HTML , CSS , JS </span>
-                        <p>A simple website made for women's day</p>
-                        <a href="https://github.com/KillerHyena/Women-s-Day-Website" class="btn" style="margin-top: 15px; display: inline-block;">Github Repo</a>
-                        <a href="https://letscelebratewomensday.netlify.app/" class="btn" style="margin-top: 15px; display: inline-block;">Deployed Link</a>
+                    <div class="project-content">
+                        <div class="project-title">Empowerment Platform</div>
+                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                        <p class="project-description">A second website dedicated to Women's Day, focusing on empowerment and achievements of women throughout history with interactive elements.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/KillerHyena/Women-s-Day-Website" class="project-btn github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://letscelebratewomensday.netlify.app/" class="project-btn">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card animate-on-scroll">
-                    <div class="card-img">
-                        <div class="project-placeholder">
-                            <i class="fas fa-dumbbell"></i>
-                            <h3>Intaglios Society Website</h3>
-                        </div>
+                <!-- Intaglios Society Website -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-header">
+                        <i class="fas fa-paint-brush project-icon"></i>
+                        <h3>Intaglios Society</h3>
                     </div>
-                    <div class="card-content">
-                        <h3>Intaglios Society Website</h3>
-                        <span class="date">HTML , CSS , JS </span>
-                        <p>A website made for the Intaglios Society</p>
-                        <a href="https://github.com/KillerHyena/Intaglios-Website" class="btn" style="margin-top: 15px; display: inline-block;">Github Repo</a>
-                        <a href="https://intaglios-the-design-society.netlify.app/" class="btn" style="margin-top: 15px; display: inline-block;">Deployed Link</a>
+                    <div class="project-content">
+                        <div class="project-title">Design Society Website</div>
+                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                        <p class="project-description">A comprehensive website for the Intaglios design society, showcasing their work, events, and member portfolios with a clean, artistic design.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/KillerHyena/Intaglios-Website" class="project-btn github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://intaglios-the-design-society.netlify.app/" class="project-btn">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
                     </div>
                 </div>
     
-                <div class="card animate-on-scroll">
-                    <div class="card-img">
-                        <div class="project-placeholder">
-                            <i class="fas fa-dumbbell"></i>
-                            <h3>Mystery Box Website</h3>
-                        </div>
+                <!-- Mystery Box Website -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-header">
+                        <i class="fas fa-box-open project-icon"></i>
+                        <h3>Mystery Box</h3>
                     </div>
-                    <div class="card-content">
-                        <h3>Mystery Box Website</h3>
-                        <span class="date">HTML , CSS , JS </span>
-                        <p>A random website made by me</p>
-                        <a href="https://github.com/KillerHyena/Mystery-Box" class="btn" style="margin-top: 15px; display: inline-block;">Github Repo</a>
-                        <a href="https://mysterio-boxo.netlify.app/" class="btn" style="margin-top: 15px; display: inline-block;">Deployed Link</a>
+                    <div class="project-content">
+                        <div class="project-title">Interactive Experience</div>
+                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                        <p class="project-description">An engaging website featuring random surprises and interactive elements. Users can explore different sections with unexpected content and animations.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/KillerHyena/Mystery-Box" class="project-btn github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://mysterio-boxo.netlify.app/" class="project-btn">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card animate-on-scroll">
-                    <div class="card-img">
-                        <div class="project-placeholder">
-                            <i class="fas fa-dumbbell"></i>
-                            <h3>Happy-Birthday Website</h3>
-                        </div>
+                <!-- Birthday Website -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-header">
+                        <i class="fas fa-birthday-cake project-icon"></i>
+                        <h3>Happy Birthday</h3>
                     </div>
-                    <div class="card-content">
-                        <h3>Happy-Birthday Website</h3>
-                        <span class="date">HTML , CSS , JS </span>
-                        <p>A website made for someone's birthday</p>
-                        <a href="https://github.com/KillerHyena/Happy-Birthday" class="btn" style="margin-top: 15px; display: inline-block;">Github Repo</a>
-                        <a href="https://happiestbirthdaywishes.netlify.app/" class="btn" style="margin-top: 15px; display: inline-block;">Deployed Link</a>
+                    <div class="project-content">
+                        <div class="project-title">Personalized Greeting</div>
+                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                        <p class="project-description">A customized birthday website with animations, personal messages, and interactive elements to celebrate someone special.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/KillerHyena/Happy-Birthday" class="project-btn github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://happiestbirthdaywishes.netlify.app/" class="project-btn">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card animate-on-scroll">
-                    <div class="card-img">
-                        <div class="project-placeholder">
-                            <i class="fas fa-dumbbell"></i>
-                            <h3>Valentine-s-Day Website</h3>
-                        </div>
+                <!-- Valentine's Day Website -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-header">
+                        <i class="fas fa-heartbeat project-icon"></i>
+                        <h3>Valentine's Day</h3>
                     </div>
-                    <div class="card-content">
-                        <h3>Valentine-s-Day Website</h3>
-                        <span class="date">HTML , CSS , JS </span>
-                        <p>A simple website made for Valentine-s-Day</p>
-                        <a href="https://github.com/KillerHyena/Valentine-s-Day" class="btn" style="margin-top: 15px; display: inline-block;">Github Repo</a>
-                        <a href="https://wishingvalentine.netlify.app/" class="btn" style="margin-top: 15px; display: inline-block;">Deployed Link</a>
+                    <div class="project-content">
+                        <div class="project-title">Romantic Celebration</div>
+                        <span class="project-tech">HTML, CSS, JavaScript</span>
+                        <p class="project-description">A charming website for Valentine's Day featuring romantic quotes, love-themed animations, and personalized messages.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/KillerHyena/Valentine-s-Day" class="project-btn github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://wishingvalentine.netlify.app/" class="project-btn">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>            
@@ -185,7 +226,7 @@
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
-            <p class="copyright">Thanks for Visiting</p>
+            <p class="copyright">Thanks for Visiting My Portfolio</p>
         </div>
     </footer>
 
